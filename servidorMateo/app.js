@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 
+require('dotenv').config()  
+console.log(process.env.PORT)
+
 app.get('/api/v1/viernes', function (req, res) {
-  res.send('Hola mundo soy get')
+  res.send('Hola mundo soy GET')
 })
 
 app.post('/api/v1/viernes', function (req, res) {
@@ -17,4 +20,8 @@ app.delete('/api/v1/viernes', function (req, res) {
   res.send('Hola mundo soy delete')
 })
 
-app.listen(3000)
+app.listen(process.env.PORT, function () {
+  console.log(`Servidor encendido en el puerto ${process.env.PORT}`)
+})
+
+//variables de entorno : son variables asociadas del servidor que no dependen del programador
