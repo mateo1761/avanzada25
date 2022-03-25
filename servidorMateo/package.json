@@ -10,5 +10,8 @@
     "serverMateo"
   ],
   "author": "Mateo Quintero Zapata",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
