@@ -5,19 +5,19 @@ require('dotenv').config()
 console.log(process.env.PORT)
 
 app.get('/api/v1/viernes', function (req, res) {
-  res.send('Hola mundo soy GET')
+  res.send('Hola mundo soy GET')// Buscar / Leer
 })
 
 app.post('/api/v1/viernes', function (req, res) {
-  res.send('Hola mundo soy post')
+  res.send('Hola mundo soy post')//Insertar / Escribir
 })
 
 app.put('/api/v1/viernes', function (req, res) {
-  res.send('Hola mundo soy put')
+  res.send('Hola mundo soy put')//Modificar / editar
 })
 
 app.delete('/api/v1/viernes', function (req, res) {
-  res.send('Hola mundo soy delete')
+  res.send('Hola mundo soy delete')//Eliminar
 })
 
 app.listen(process.env.PORT, function () {
