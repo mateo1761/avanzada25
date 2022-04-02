@@ -4,6 +4,7 @@ const app = express()
 require('dotenv').config()  
 console.log(process.env.PORT)
 
+//Todo endpoint empieza con un /
 app.get('/api/v1/viernes', function (req, res) {
   res.send('Hola mundo soy GET')// Buscar / Leer
 })
