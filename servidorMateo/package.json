@@ -1,5 +1,6 @@
 {
   "name": "servidormateo",
+  "type": "module",
   "version": "1.0.0",
   "description": "api rest de prueba con js",
   "main": "app.js",

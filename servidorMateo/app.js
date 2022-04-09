@@ -1,14 +1,22 @@
-const express = require('express')
-const app = express()
-
-require('dotenv').config()  
+//Importo las variables de entorno
+//require('dotenv').config()  forma vieja de importar 
+import 'dotenv/config'
 console.log(process.env.PORT)
 
-//Todo endpoint empieza con un /
-app.get('/api/v1/viernes', function (req, res) {
-  res.send('Hola mundo soy GET')// Buscar / Leer
-})
+//IMPORTO LA CLASE Servidor
+import {Servidor} from './Server/Servidor.js'
 
+//Crear obejto de la clase servidor
+
+let servidor = new Servidor()
+
+//DESPERTAR EL SERVIDOR
+
+servidor.despertarServidor()
+
+//Todo endpoint empieza con un /
+
+/*
 app.post('/api/v1/viernes', function (req, res) {
   res.send('Hola mundo soy post')//Insertar / Escribir
 })
@@ -19,10 +27,6 @@ app.put('/api/v1/viernes', function (req, res) {
 
 app.delete('/api/v1/viernes', function (req, res) {
   res.send('Hola mundo soy delete')//Eliminar
-})
-
-app.listen(process.env.PORT, function () {
-  console.log(`Servidor encendido en el puerto ${process.env.PORT}`)
-})
+})*/
 
 //variables de entorno : son variables asociadas del servidor que no dependen del programador
