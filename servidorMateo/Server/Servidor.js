@@ -13,7 +13,7 @@ export class Servidor{
 
         this.app.listen(process.env.PORT, function () {
             console.log(`Servidor encendido en el puerto ${process.env.PORT}`)
-          })
+        })
 
     }
 
@@ -27,11 +27,11 @@ export class Servidor{
         this.app.post('/api/v1/viernes', function (req, res) {
             res.send('Hola mundo soy post')//Insertar / Escribir
         })
-          
+
         this.app.put('/api/v1/viernes', function (req, res) {
             res.send('Hola mundo soy put')//Modificar / editar
         })
-          
+
         this.app.delete('/api/v1/viernes', function (req, res) {
             res.send('Hola mundo soy delete')//Eliminar
         })
