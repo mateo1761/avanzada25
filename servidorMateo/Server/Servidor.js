@@ -2,6 +2,9 @@
 //const express = require('express') //version vieja de importar
 import  express  from 'express'
 
+//Importando las rutas
+import {express} from '../routes/routes.js'
+
 export class Servidor{
 
     constructor(){

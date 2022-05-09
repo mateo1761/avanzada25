@@ -1,5 +1,5 @@
 //Importo las variables de entorno
-//require('dotenv').config()  forma vieja de importar 
+//require('dotenv').config()  forma vieja de importar  
 import 'dotenv/config'
 
 //1. IMPORTO LA CLASE SERVIDOR
