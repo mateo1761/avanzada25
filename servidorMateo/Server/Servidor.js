@@ -5,9 +5,11 @@ import  express  from 'express'
 export class Servidor{
 
     constructor(){
-        this.app = express()
+        this.app = express()// atributo app
         this.atenderPeticiones()
     }
+
+    //Metodos del servidor
 
     despertarServidor(){
 
